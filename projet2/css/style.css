@@ -1,3 +1,66 @@
+/body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style pour le header */
+header {
+    padding: 5px 20px;
+}
+
+/* Style pour le nav */
+nav {
+    display: flex;
+    align-items: center;
+  justify-content: flex-end;
+}
+
+/* Style pour le logo dans le nav */
+nav .logo img {
+    height: 20px; /* Ajuster la hauteur du logo */
+}
+
+/* Style pour la liste des liens de navigation */
+nav ul.nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+/* Style pour les éléments de la liste */
+nav ul.nav-links li {
+    margin-left: 20px;
+  
+}
+
+/* Style pour les liens de navigation */
+nav ul.nav-links li a {
+    color: #0065FC;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
