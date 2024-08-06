@@ -6,7 +6,7 @@ body {
 
 /* Style pour le header */
 header {
-    padding: 5px 20px;
+    padding: 6px 37px;
 }
 
 /* Style pour le nav */
@@ -18,8 +18,8 @@ nav {
 
 /* Style pour le logo dans le nav */
 nav .logo img {
-    height: 20px;
-    /* Ajuster la hauteur du logo */
+    height: 17px;
+
 }
 
 /* Style pour la liste des liens de navigation */
@@ -31,20 +31,88 @@ nav ul.nav-links {
 
 /* Style pour les éléments de la liste */
 nav ul.nav-links li {
-    margin-left: 20px;
+    margin-left: 35px;
 
 }
 
 /* Style pour les liens de navigation */
 nav ul.nav-links li a {
-    color: #0065FC;
+    color: grey;
     font-size: 15px;
     text-decoration: none;
     padding: 5px 10px;
 }
 
+/* Style pour le lien survolé */
+nav ul.nav-links li a:hover {
+    color: #0065FC;
+    text-decoration: overline;
+}
 
+/* barre de recherche et icone*/
+.search-container {
+    display: flex;
+    width: 500px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
 
+/* Style pour titre h1*/
+.title-search .gros-titre {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* style sous-titre*/
+.title-search .sous-titre {
+    font-size: 14.5px;
+    margin-bottom: 20px;
+}
+
+/* style barre recherche*/
+.search-bar {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+}
+
+.fa-solid.fa-location-dot {
+    color: black;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    font-size: 20px;
+
+}
+
+.search-bar input[type="text"] {
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    padding: 5px;
+    border: none;
+}
+
+/*style pour boutton rechercher*/
+.search-bar button {
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 5px 15px;
+    border: none;
+    background-color: #0065fc;
+    color: white;
+    border-radius: 0 17px 17px 0;
+}
+
+.search-bar input[placeholder="Marseille, France"] {
+    color: black;
+    font-weight: 900;
+    padding-left: 0;
+
+}
 
 /****** General ***********/
 * {
@@ -65,7 +133,7 @@ nav ul.nav-links li a {
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
+    padding: 0 35px;
     box-sizing: border-box;
 }
 
@@ -113,6 +181,8 @@ a {
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
+    padding-left: 55px;
+    padding-top: 300px;
 }
 
 /****** Hebergements ***********/
@@ -122,7 +192,7 @@ a {
 
 /****** Populaires ***********/
 .populaires {
-    width: 32%;
+    width: 460px;
 }
 
 .populaires-title {
