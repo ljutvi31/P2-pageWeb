@@ -4,38 +4,38 @@ body {
     padding: 0;
 }
 
-/* Style pour le header */
+/* Styles pour le header */
 header {
     padding: 6px 37px;
 }
 
-/* Style pour le nav */
+/* styles pour le nav */
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-/* Style pour le logo dans le nav */
+/* styles pour le logo dans le nav */
 nav .logo img {
     height: 17px;
 
 }
 
-/* Style pour la liste des liens de navigation */
+/* styles pour la liste des liens de navigation */
 nav ul.nav-links {
     display: flex;
     list-style: none;
     justify-content: flex-end;
 }
 
-/* Style pour les éléments de la liste */
+/* styles pour les éléments de la liste */
 nav ul.nav-links li {
     margin-left: 35px;
 
 }
 
-/* Style pour les liens de navigation */
+/* styles pour les liens de navigation */
 nav ul.nav-links li a {
     color: grey;
     font-size: 15px;
@@ -43,7 +43,7 @@ nav ul.nav-links li a {
     padding: 5px 10px;
 }
 
-/* Style pour le lien survolé */
+/* styles pour le lien survolé */
 nav ul.nav-links li a:hover {
     color: #0065FC;
     text-decoration: overline;
@@ -58,36 +58,39 @@ nav ul.nav-links li a:hover {
     text-align: left;
 }
 
-/* Style pour titre h1*/
+/* styles pour titre h1*/
 .title-search .gros-titre {
     font-size: 20px;
     margin-top: 20px;
 }
 
-/* style sous-titre*/
+/* styles sous-titre*/
 .title-search .sous-titre {
     font-size: 14.5px;
     margin-bottom: 20px;
 }
 
-/* style barre recherche*/
+/* styles barre recherche*/
 .search-bar {
     display: flex;
     width: 100%;
     padding: 10px;
 }
 
+/* styles icones*/
 .fa-solid.fa-location-dot {
     color: black;
     background-color: white;
-    padding: 10px;
+    padding: 5px;
     display: flex;
     align-items: left;
     justify-content: left;
     font-size: 20px;
+    margin-top: 1px;
 
 }
 
+/* styles pour l'input texte*/
 .search-bar input[type="text"] {
     font-family: 'Raleway', sans-serif;
     font-size: 17px;
@@ -95,7 +98,7 @@ nav ul.nav-links li a:hover {
     border: none;
 }
 
-/*style pour boutton rechercher*/
+/* styles pour boutton rechercher*/
 .search-bar button {
     font-family: 'Raleway', sans-serif;
     font-size: 17px;
@@ -107,12 +110,68 @@ nav ul.nav-links li a:hover {
     border-radius: 0 17px 17px 0;
 }
 
+/* styles pour l'interieur de l'input placeholder*/
 .search-bar input[placeholder="Marseille, France"] {
     color: black;
     font-weight: 900;
     padding-left: 0;
-
+    margin-left: 10px;
 }
+
+/* conteneur des filtres*/
+.filter-container {
+    display: flex;
+    margin: 20px;
+    margin-left: 0;
+}
+
+/* Label*/
+.filter-label {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 900;
+    width: 25%;
+    margin-right: -190px;
+}
+
+/* styles bouttons*/
+.filter-button {
+    border: 1px solid rgb(189, 186, 186);
+    border-radius: 25px;
+    padding: 6px 9px;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 13px;
+    color: black;
+    margin-left: 12px;
+    margin-right: 1px;
+    font-weight: 900;
+}
+
+/* styles filtres bouttons*/
+.filter-button i {
+    display: flex;
+    margin: 5px;
+    margin-right: 3px;
+}
+
+.info-container {
+    display: flex;
+}
+
+.fa-solid {
+    display: flex;
+    font-size: 17px;
+    margin-top: 15px;
+    margin-right: 5px;
+}
+
+
+
 
 /****** General ***********/
 * {
