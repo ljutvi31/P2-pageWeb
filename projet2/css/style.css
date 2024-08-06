@@ -19,7 +19,6 @@ nav {
 /* styles pour le logo dans le nav */
 nav .logo img {
     height: 17px;
-
 }
 
 /* styles pour la liste des liens de navigation */
@@ -32,7 +31,6 @@ nav ul.nav-links {
 /* styles pour les éléments de la liste */
 nav ul.nav-links li {
     margin-left: 35px;
-
 }
 
 /* styles pour les liens de navigation */
@@ -87,7 +85,6 @@ nav ul.nav-links li a:hover {
     justify-content: left;
     font-size: 20px;
     margin-top: 1px;
-
 }
 
 /* styles pour l'input texte*/
@@ -111,28 +108,29 @@ nav ul.nav-links li a:hover {
 }
 
 /* styles pour l'interieur de l'input placeholder*/
-.search-bar input[placeholder="Marseille, France"] {
-    color: black;
+.search-bar #search-input {
+   
     font-weight: 900;
     padding-left: 0;
     margin-left: 10px;
 }
-
+.search-bar #search-input::placeholder {
+color: black;
+}
 /* conteneur des filtres*/
 .filter-container {
     display: flex;
     margin: 20px;
     margin-left: 0;
+    align-items: center;
 }
 
 /* Label*/
 .filter-label {
-    display: flex;
+    display: inline;
     align-items: center;
     font-size: 18px;
     font-weight: 900;
-    width: 25%;
-    margin-right: -190px;
 }
 
 /* styles bouttons*/
@@ -164,15 +162,22 @@ nav ul.nav-links li a:hover {
 }
 
 .fa-solid {
-    display: flex;
-    font-size: 17px;
+    display: inline;
+    font-size: 15px;
     margin-top: 15px;
     margin-right: 5px;
+    
 }
-
-
-
-
+.spe-info {
+    font-size: 11px;
+    display: block;
+    width: 14px;
+    height: 14px;
+    padding: 2px;
+    text-align: center;
+    border: 1px solid rgb(187, 187, 192);
+    border-radius: 100%;
+}
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
