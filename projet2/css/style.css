@@ -64,6 +64,7 @@ nav ul.nav-links li a:hover {
 
 /* styles sous-titre*/
 .title-search .sous-titre {
+    height: 10px;
     font-size: 14.5px;
     margin-bottom: 20px;
 }
@@ -71,15 +72,16 @@ nav ul.nav-links li a:hover {
 /* styles barre recherche*/
 .search-bar {
     display: flex;
+    height: 25px;
     width: 100%;
     padding: 10px;
 }
 
-/* styles icones*/
+/* styles icones de localisation*/
 .fa-solid.fa-location-dot {
     color: black;
-    background-color: white;
-    padding: 5px;
+    background-color: #F2F2F2;
+    padding: 0px;
     display: flex;
     align-items: left;
     justify-content: left;
@@ -89,6 +91,9 @@ nav ul.nav-links li a:hover {
 
 /* styles pour l'input texte*/
 .search-bar input[type="text"] {
+    display: inline-block;
+    width: 150px;
+    box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
     font-size: 17px;
     padding: 5px;
@@ -109,14 +114,17 @@ nav ul.nav-links li a:hover {
 
 /* styles pour l'interieur de l'input placeholder*/
 .search-bar #search-input {
-   
+
     font-weight: 900;
     padding-left: 0;
     margin-left: 10px;
 }
+
+/* style placeholder*/
 .search-bar #search-input::placeholder {
-color: black;
+    color: black;
 }
+
 /* conteneur des filtres*/
 .filter-container {
     display: flex;
@@ -138,7 +146,7 @@ color: black;
     border: 1px solid rgb(189, 186, 186);
     border-radius: 25px;
     padding: 6px 9px;
-    background-color: white;
+    background-color: #F2F2F2;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -157,6 +165,11 @@ color: black;
     margin-right: 3px;
 }
 
+/* style du survol souris*/
+.filter-container :hover {
+    background-color: #DEEBFF;
+}
+
 .info-container {
     display: flex;
 }
@@ -165,9 +178,10 @@ color: black;
     display: inline;
     font-size: 15px;
     margin-top: 15px;
-    margin-right: 5px;
-    
 }
+
+
+/*styles icone "i"*/
 .spe-info {
     font-size: 11px;
     display: block;
@@ -178,6 +192,8 @@ color: black;
     border: 1px solid rgb(187, 187, 192);
     border-radius: 100%;
 }
+
+
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
@@ -224,6 +240,7 @@ a {
 
 .card-title {
     font-size: 16px;
+    margin-top: 1px;
 }
 
 .euro {
@@ -245,13 +262,64 @@ a {
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
-    padding-left: 55px;
-    padding-top: 300px;
+    padding-left: 22px;
+    padding-top: 15px;
 }
 
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+}
+
+.hebergements-title {
+    display: flex;
+    align-items: center;
+}
+
+.hebergements-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 33px;
+    margin-right: 90px;
+}
+
+.hebergements-cards img {
+    width: 185px;
+    height: 115px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    border-right: 20px 20px 20px;
+}
+
+.hebergements-cards.card {
+    display: flex;
+    flex-direction: column: box-sizing: border-box;
+}
+
+.hebergements-cards.card-content {
+    padding-left: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 33px
+}
+
+.hebergements-cards.card-title {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.hebergements-cards.card-price {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hebergements-cards.card-rating {
+    font-size: 12px;
+}
+
+.card-rating .n5 {
+    display: none;
 }
 
 /****** Populaires ***********/
@@ -278,25 +346,28 @@ a {
 }
 
 .populaires-cards .card-content {
-    width: 67%;
-    padding-left: 15px;
     display: flex;
+    width: 100%;
+    padding-left: 20px;
+    ;
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
 }
 
 .populaires-cards .card-title {
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom: 4px;
 }
 
 .populaires-cards .card-subtitle {
     margin: 0;
+    font-size: 14px;
 }
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
+
 }
 
 
