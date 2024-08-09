@@ -218,6 +218,7 @@ nav ul.nav-links li a:hover {
 }
 
 a {
+    width: 28%;
     color: inherit;
     text-decoration: none;
 }
@@ -230,7 +231,7 @@ a {
 .card {
     background-color: white;
     border-radius: 20px;
-    padding: 5px;
+    padding: 4px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
@@ -260,7 +261,7 @@ a {
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
-    padding: 30px;
+    padding: 0px;
     box-sizing: border-box;
     padding-left: 22px;
     padding-top: 15px;
@@ -289,7 +290,7 @@ a {
 
 /* styles images cartes*/
 .hebergements-cards img {
-    width: 250px;
+    width: 100%;
     height: 117px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
@@ -379,9 +380,54 @@ a {
     margin-bottom: 5px;
 }
 
+.showmore-container {
+    margin-left: 43px;
 
+}
 
+.showmore-btn {
+    font-size: 22px;
+    font-weight: 900;
+    background: none;
+    /* Retire le fond */
+    border: none;
+    cursor: pointer;
+}
 
+.activity {
+    display: flex;
+    margin: 33px;
+}
+
+.activity-card {
+    width: ;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 15px;
+    margin-top: 33px;
+    margin-right: 17px;
+}
+
+.activity-card img {
+    display: flex;
+    width: 100%;
+    height: 136px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.activity-card-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.activity-card-content h4 {
+    font-family: 'Raleway', sans-serif
+}
 
 
 
