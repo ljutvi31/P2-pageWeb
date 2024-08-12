@@ -49,20 +49,20 @@ nav ul.nav-links li a:hover {
 /* barre de recherche et icone*/
 .search-container {
     display: flex;
-    width: 500px;
+    width: 100%;
     margin: 0;
     padding: 0;
     text-align: left;
 }
 
 /* styles pour titre h1*/
-.title-search .gros-titre {
+.title-search .main-titre {
     font-size: 20px;
     margin-top: 20px;
 }
 
 /* styles sous-titre*/
-.title-search .sous-titre {
+.title-search .sub-titre {
     height: 10px;
     font-size: 14.5px;
     margin-bottom: 20px;
@@ -80,7 +80,7 @@ nav ul.nav-links li a:hover {
 .fa-solid.fa-location-dot {
     color: black;
     background-color: #F2F2F2;
-    padding: 0px;
+    padding: 11px;
     display: flex;
     justify-content: left;
     font-size: 20px;
@@ -103,7 +103,7 @@ nav ul.nav-links li a:hover {
     font-family: 'Raleway', sans-serif;
     font-size: 17px;
     font-weight: 700;
-    padding: 5px 15px;
+    padding: 13px 18px;
     border: none;
     background-color: #0065fc;
     color: white;
@@ -115,7 +115,7 @@ nav ul.nav-links li a:hover {
 
     font-weight: 900;
     padding-left: 0;
-    margin-left: 10px;
+    margin-left: 22px;
 }
 
 /* style placeholder*/
@@ -126,7 +126,7 @@ nav ul.nav-links li a:hover {
 /* conteneur des filtres*/
 .filter-container {
     display: flex;
-    margin: 20px;
+    margin: 37px;
     margin-left: 0;
     align-items: center;
 }
