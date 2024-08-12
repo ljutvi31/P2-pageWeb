@@ -183,7 +183,7 @@ nav ul.nav-links li a:hover {
 .spe-info {
     font-size: 11px;
     display: block;
-    width: 14px;
+    width: 2%;
     height: 14px;
     padding: 2px;
     text-align: center;
@@ -380,12 +380,13 @@ a {
 }
 
 .showmore-container {
-    margin-left: 43px;
+    margin-left: 52px;
+    margin-bottom: 100px;
 
 }
 
 .showmore-btn {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 900;
     background: none;
     /* Retire le fond */
@@ -395,21 +396,22 @@ a {
 
 .activity {
     display: flex;
+    justify-content: space-between;
     margin: 33px;
 }
 
 .activity-title {
     display: flex;
-    align-items: left;
+    margin-left: 52px;
 }
 
-.activity-section-title {
-    margin: 0;
+.section-title {
+    margin-left: px;
     font-size: 22px;
 }
 
 .activity-card {
-    display: flex;
+
     flex-direction: column;
     flex-wrap: nowrap;
     margin-top: 33px;
