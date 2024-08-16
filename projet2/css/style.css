@@ -1,4 +1,7 @@
+/*styles pour le body*/
 body {
+    max-width: 1440px;
+    min-width: 320px;
     font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
@@ -47,13 +50,6 @@ nav ul.nav-links li a:hover {
 }
 
 /* barre de recherche et icone*/
-.search-container {
-    display: flex;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    text-align: left;
-}
 
 /* styles pour titre h1*/
 .title-search .main-titre {
@@ -72,7 +68,7 @@ nav ul.nav-links li a:hover {
 .search-bar {
     display: flex;
     height: 25px;
-    width: 100%;
+    width: 125%;
     padding: 10px;
 }
 
@@ -85,12 +81,13 @@ nav ul.nav-links li a:hover {
     justify-content: left;
     font-size: 20px;
     margin-top: 1px;
+    border-radius: 12px 0px 0px 12px
 }
 
 /* styles pour l'input texte*/
 .search-bar input[type="text"] {
     display: inline-block;
-    width: 150px;
+
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
     font-size: 17px;
@@ -123,27 +120,28 @@ nav ul.nav-links li a:hover {
     color: black;
 }
 
+/* Label filtres*/
+.filter-label {
+    font-size: 18px;
+    font-weight: 900;
+    margin-right: 15px;
+}
+
 /* conteneur des filtres*/
 .filter-container {
     display: flex;
-    margin: 37px;
-    margin-left: 0;
     align-items: center;
-}
-
-/* Label*/
-.filter-label {
-    display: inline;
-    align-items: center;
-    font-size: 18px;
-    font-weight: 900;
+    justify-content: flex-start;
+    margin: 25px;
+    margin-left: 7px;
+    margin-bottom: 20px;
 }
 
 /* styles bouttons*/
 .filter-button {
     border: 1px solid rgb(189, 186, 186);
     border-radius: 25px;
-    padding: 6px 9px;
+    padding: 6px 9px 5px 10px;
     background-color: #F2F2F2;
     cursor: pointer;
     display: flex;
@@ -152,7 +150,6 @@ nav ul.nav-links li a:hover {
     font-size: 13px;
     color: black;
     margin-left: 12px;
-    margin-right: 1px;
     font-weight: 900;
 }
 
@@ -178,19 +175,21 @@ nav ul.nav-links li a:hover {
     margin-top: 15px;
 }
 
-
 /*styles icone "i"*/
 .spe-info {
     font-size: 11px;
     display: block;
-    width: 2%;
+    width: 1%;
     height: 14px;
-    padding: 2px;
+    padding: 1px;
     text-align: center;
     border: 1px solid rgb(187, 187, 192);
     border-radius: 100%;
 }
 
+.info-container .sub-titre {
+    margin-left: 15px;
+}
 
 /****** General ***********/
 * {
@@ -285,6 +284,7 @@ a {
     gap: 15px;
     margin-top: 33px;
     margin-right: 17px;
+    margin-left: 10px;
 }
 
 /* styles images cartes*/
@@ -341,11 +341,13 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-right: 38px;
 }
 
 /* stylescartes pop*/
 .populaires-cards .card {
     display: flex;
+    width: 90%;
     margin-top: 33px;
 }
 
@@ -353,8 +355,7 @@ a {
 .populaires-cards img {
     width: 33%;
     height: 136px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-radius: 20px 20px 0 0;
 }
 
 .populaires-cards .card-content {
@@ -382,7 +383,6 @@ a {
 .showmore-container {
     margin-left: 52px;
     margin-bottom: 100px;
-
 }
 
 .showmore-btn {
@@ -404,18 +404,17 @@ a {
 
 .section-title {
     font-size: 22px;
+    margin: 4px;
 }
 
 .activity-card {
     display: flex;
-    width: 100%;
-    margin-top: 33px;
-    margin-right: 17px;
+    width: 98%;
 }
 
 .activity-card img {
     display: flex;
-    width: 85%;
+    width: 75%;
     height: 380px;
     margin-left: 17px;
     object-fit: cover;
@@ -486,14 +485,14 @@ footer {
     }
 
     .populaires {
-        width: 100%;
+        width: 88%;
         margin-top: 50px;
-        flex-direction: column;
+
     }
 
     .populaires-cards {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
     }
 
@@ -508,9 +507,97 @@ footer {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activity {
+        width: 85%;
+        margin-left: 40px;
+    }
+
+    .activity-card img {
+        height: 200px;
+        object-fit: cover;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    nav {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    nav .logo img {
+        height: 18px;
+        margin: 10px;
+    }
+
+    nav ul.nav-links {
+        margin-bottom: 12px;
+    }
+
+    nav ul.nav-links li {
+        margin-left: 5px;
+        margin-right: 80px;
+    }
+
+    nav ul.nav-links li a {
+        font-size: 14px;
+    }
+
+    nav ul.nav-links li a:hover {
+        color: #0065FC;
+        text-decoration: none;
+        border-bottom: 2px solid;
+        padding: 10px 35px;
+    }
+
+    .title-search .main-titre {
+        font-size: 20px;
+        margin-top: 0;
+    }
+
+    .title-search .sub-titre {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    .search-bar button {
+        font-size: 0;
+        /* Masque le texte du bouton */
+        padding: 13px;
+        /* Ajuste le padding pour centrer l'icône */
+        border-radius: 12px 12px 12px 12px;
+        box-shadow: 0px 5px 6px 0px rgb(196, 196, 196);
+    }
+
+    .search-bar button::before {
+        content: "\f002";
+        /* Code Unicode pour l'icône de loupe (FontAwesome) */
+        font-family: "FontAwesome";
+        /* Spécifie que l'icône provient de FontAwesome */
+        font-size: 14px;
+        /* Taille de l'icône */
+        margin-right: 0;
+        /* Enlève tout espacement à droite */
+        display: inline-block;
+        /* Affiche l'icône en ligne */
+    }
+
+    .filter-container {
+        flex-wrap: wrap;
+    }
+
+    .filter-button {
+        flex-grow: 1;
+        margin: 10px;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    .filter-label {
+        .filter-label .filter-label 
+            font-weight: 900;
+            position: relative;
+            top: 20px;
+            left: 5px;
 }
