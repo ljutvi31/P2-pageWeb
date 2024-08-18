@@ -18,10 +18,13 @@
     <header>
         <nav>
             <a href="logo" class="logo">
-                <img src="./Images/Logo/Booki.png" alt="Booki Logo" /></a>
+                <img src="./Images/Logo/Booki.png" alt="Booki Logo" />
+            </a>
             <ul class="nav-links">
-                <li><a href="heb">Hébergements</a></li>
-                <li><a href="act">Activités</a></li>
+                <li><a href="heb">Hébergements</a>
+                </li>
+                <li><a href="act">Activités</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -29,28 +32,25 @@
 
     <div class="main-container">
         <main>
-            <div class="title-search">
+            <section class="title-search">
                 <h1 class="main-titre"> Trouvez votre hébergement pour des vacances de rêves</h1>
                 <p class="sub-titre"> En plein centre-ville ou en pleine nature</p>
-            </div>
+            </section>
             <!--partie titre-->
 
-            <div class="search-container">
-                <div class="search-bar">
-                    <div class="icon-localisation">
-                        <i class="fa-solid fa-location-dot"></i>
-                    </div>
-                    <form>
-                        <input type="text" id="search-input" placeholder="Marseille, France">
-                        <button type="submit">Rechercher</button>
-                    </form>
+            <div class="search-bar">
+                <div class="icon-localisation">
+                    <i class="fa-solid fa-location-dot"></i>
                 </div>
+                <form>
+                    <input type="text" id="search-input" placeholder="Marseille, France">
+                    <button type="submit">Rechercher</button>
+                </form>
             </div>
             <!--barre de recherche-->
 
-
             <span class="filter-label">Filtres</span>
-            <div class="filter-container">
+            <section class="filter-container">
                 <button class="filter-button economic" type="button">
                     <i class="fa-sharp fa-solid fa-money-bill-wave"></i> Économique
                 </button>
@@ -63,21 +63,21 @@
                 <button class="filter-button gems selected" type="button">
                     <i class="fa-solid fa-fire"></i> Nos pépites
                 </button>
-            </div>
+            </section>
             <!--filtres -->
 
-            <div class="info-container">
+            <article class="info-container">
                 <i class="fa-solid fa-info spe-info"></i>
                 <p class="sub-titre">Plus de 500 logements sont disponibles dans cette ville</p>
-            </div>
+            </article>
             <!--infos-->
 
             <div class="hebergements-and-populaires">
                 <section class="hebergements" id="item1">
-                    <div class="hebergements-title">
+                    <header class="hebergements-title">
 
                         <h2 class="section-title">Hébergement à Marseille</h2>
-                    </div>
+                    </header>
                     <!--titre section hebergements-->
 
                     <div class="hebergements-cards">
@@ -217,10 +217,10 @@
 
 
                 <section class="populaires" id="item3">
-                    <div class="populaires-title">
+                    <header class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
-                    </div>
+                    </header>
                     <div class="populaires-cards">
                         <a href="#">
                             <article class="card">
@@ -291,14 +291,14 @@
 
     <!--cards hebergements-->
 
-    <div class="showmore-container" id="item2">
+    <section class="showmore-container" id="item2">
         <button class="showmore-btn">Afficher plus</button>
-    </div>
+    </section>
     <!--bouton afficher plus-->
 
-    <div class="activity-title">
+    <header class="activity-title">
         <h2 class="section-title">Activités à Marseille</h2>
-    </div>
+    </header>
     <!--titre activités-->
 
     <section class="activity">
@@ -333,13 +333,12 @@
             <a href="#">
                 <img src="./images/actvites/florian-wehde.jpg" alt="image notre dame de garde">
                 <div class="activity-card-content">
-
                     <div class="activity-card-txt">
                         <h3 class="activity-card-title">Notre-Dame-de-la-Garde</h3>
                     </div>
                 </div>
+            </a>
         </article>
-        </a>
     </section>
     <!--activity cards-->
 

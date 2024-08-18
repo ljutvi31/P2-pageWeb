@@ -9,7 +9,7 @@ body {
 
 /* Styles pour le header */
 header {
-    padding: 6px 37px;
+    padding: 6px 10px;
 }
 
 /* styles pour le nav */
@@ -22,6 +22,7 @@ nav {
 /* styles pour le logo dans le nav */
 nav .logo img {
     height: 17px;
+    margin-left: 25px;
 }
 
 /* styles pour la liste des liens de navigation */
@@ -29,6 +30,7 @@ nav ul.nav-links {
     display: flex;
     list-style: none;
     justify-content: flex-end;
+    margin-right: 25px;
 }
 
 /* styles pour les éléments de la liste */
@@ -400,7 +402,7 @@ a {
 
 .activity {
     width: 100%;
-    margin: 33px;
+    margin: 50px;
 }
 
 .activity-title {
@@ -719,7 +721,7 @@ footer {
     }
 
     .section-title {
-        font-size: 22px;
+        font-size: 21px;
         margin-left: 10px;
     }
 
@@ -744,7 +746,7 @@ footer {
 
     .hebergements-title {
         display: flex;
-        align-items: center;
+        margin: 0px;
     }
 
     .hebergements-cards {
@@ -911,5 +913,4 @@ footer {
     .footer-container ul li {
         margin-bottom: 0px;
     }
-}
 }
