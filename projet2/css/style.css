@@ -590,7 +590,6 @@ footer {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
-        gap: 30px;
         margin-top: 33px;
         margin-right: 0px;
         margin-left: 25px;
