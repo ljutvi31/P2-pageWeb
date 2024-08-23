@@ -218,7 +218,6 @@ form {
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
-
 }
 
 :root {
@@ -230,7 +229,6 @@ form {
 .fa-solid {
     color: var(--main-color);
 }
-
 
 .main-container {
     width: 100%;
@@ -423,7 +421,7 @@ a {
 
 .activity-card {
     display: flex;
-    width: 93%
+    width: 98%
 }
 
 
@@ -811,7 +809,7 @@ footer {
 
     form {
         display: flex;
-        height: 52px;
+        height: 47px;
     }
 
     .search-bar {
@@ -841,8 +839,7 @@ footer {
     .search-bar input[type="text"] {
         box-sizing: border-box;
         font-family: 'Raleway', sans-serif;
-        padding: 10px 0;
-        padding-top: 10px;
+        padding: 0px;
         border-top: 1px #D9D9D9 solid;
         border-right: none;
         border-left: none;
@@ -898,7 +895,7 @@ footer {
     .filter-button {
         width: 41%;
         height: 50px;
-        border: 1px solid rgb(189, 186, 186);
+        border: 1px solid #D9D9D9;
         border-radius: 25px;
         padding: 6px 10px 4px 4px;
         background-color: #F2F2F2;
@@ -921,7 +918,7 @@ footer {
     .spe-info {
         font-size: 11px;
         display: block;
-        width: 5%;
+        width: 3%;
         height: 14px;
         padding: 1px;
         text-align: center;
@@ -937,7 +934,7 @@ footer {
     .info-container .sub-titre {
         margin-left: 10px;
         font-size: 15px;
-        margin-top: 14px;
+        margin-top: 18px;
     }
 
     .section-title {
