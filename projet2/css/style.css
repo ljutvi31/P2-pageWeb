@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    padding: 0px 5px;
+    padding: 0px 0px;
 }
 
 nav {
@@ -15,13 +15,12 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 5px;
+    height: 100%;
 }
 
 nav .logo img {
-    height: 17px;
-    margin-left:
-        35px;
+    height: 15px;
+    margin-left: 35px;
 }
 
 nav ul.nav-links {
@@ -33,19 +32,19 @@ nav ul.nav-links {
 
 nav ul.nav-links li {
     margin-left: 35px;
+    border-top: 2px solid rgb(254, 254, 255);
 }
 
 nav ul.nav-links li a {
     font-size: 15px;
     text-decoration: none;
-    padding: 0px 0px;
 }
 
-nav ul.nav-links li a:hover {
+nav ul.nav-links li:hover {
     color: #0065FC;
     text-decoration: none;
     border-top: 2px solid;
-    padding: 18px 0px;
+    padding-top: 10px;
 }
 
 /* barre de recherche et icone*/
@@ -212,7 +211,6 @@ form {
 }
 
 a {
-    width: 31%;
     color: inherit;
     text-decoration: none;
 }
@@ -272,6 +270,10 @@ a {
     order: 1;
 }
 
+.heb-links {
+    width: 31%;
+}
+
 .hebergements-title {
     display: flex;
     align-items: center;
@@ -284,7 +286,6 @@ a {
     gap: 19px;
     margin-top: 33px;
     margin-right: 18px;
-    margin-left: 10px;
 }
 
 .hebergements-cards img {
@@ -360,29 +361,33 @@ a {
 }
 
 .activity {
-    margin: 20px;
-    margin-left: 50px;
+    display: flex;
+    margin-left: 5%;
     margin-bottom: 35px;
+    margin-top: 25px;
+    gap: 30px;
 }
 
 .activity-title {
-    margin-left: 60px;
+    margin-left: 4em;
     margin-top: 5em;
 }
 
 .activity-card {
     display: flex;
-    width: 100%
+    width: 22%;
+    background-color: white;
+    border-radius: 25px 20px 20px 25px;
+    margin-bottom: 17px;
+    filter: drop-shadow(0px 3px 15px rgba(173, 173, 173, 0.1));
 }
 
 .activity-card img {
     display: flex;
-    width: 90%;
+    width: 100%;
     height: 380px;
-    margin-left: 17px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
-    box-shadow: 0px 8px 20px #b1b1b1;
 }
 
 .activity-card-content h3 {
@@ -429,13 +434,12 @@ footer {
 @media (max-width: 1024px) and (min-width: 767px) {
     .main-container {
         width: 100%;
-        padding: 0 35px;
         box-sizing: border-box;
     }
 
     nav .logo img {
         height: 17px;
-        margin-left: 4.5em;
+        margin-left: 2.5em;
     }
 
     .card {
@@ -513,16 +517,20 @@ footer {
         padding: 10px;
         box-sizing: border-box;
         padding-left: 10px;
-        width: 94%;
+        width: 90%;
     }
 
     .section-title {
-        margin: 0;
         font-size: 22px;
         margin-top: 20px;
-        margin-left: 10px;
+        margin-left: 1em;
         margin-bottom: 30px;
     }
+
+    .heb-links {
+        width: 30%;
+    }
+
 
     .hebergements {
         width: 100%;
@@ -534,12 +542,11 @@ footer {
     }
 
     .hebergements-cards {
-        width: 98%;
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start;
         margin-top: 0px;
-        margin-right: 0px;
+        ;
         margin-left: 23px;
     }
 
@@ -618,7 +625,7 @@ footer {
 
     .populaires-cards .card {
         display: flex;
-        width: 82%;
+        width: 80%;
         margin-top: 0px;
         margin-left: 12px;
     }
@@ -629,45 +636,45 @@ footer {
     }
 
     .activity {
-        width: 94%;
+        display: flex;
+        margin-left: 8%;
+        margin-bottom: 35px;
+        gap: 30px;
+    }
+
+    .activity-title {
+        margin-left: 4em;
+        margin-top: 5em;
     }
 
     .activity-card {
         display: flex;
-        width: 93%;
+        width: 20%;
+        background-color: white;
+        border-radius: 25px 20px 20px 25px;
+        filter: drop-shadow(0px 3px 15px rgba(173, 173, 173, 0.1));
     }
 
     .activity-card img {
-        width: 80%;
-        height: 210px;
-        object-fit: cover;
-        margin-left: 48px;
-    }
-
-    .activity-card-content {
         display: flex;
-        align-items: center;
-        margin-left: 32px;
-        margin-right: 0px;
-        box-sizing: border-box;
-        background-color: white;
-        border-radius: 0px 0px 20px 20px;
-        box-shadow: 0px 10px 15px rgb(220 220 220)
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0;
     }
 
     .activity-card-content h3 {
         font-family: 'Raleway', sans-serif;
-        font-size: 17px;
+        font-size: 15px;
         margin-left: 15px;
         font-weight: 900;
-        margin-bottom: 33px;
     }
 
     footer {
         display: flex;
         padding: 20px 0;
-        margin-left: 70px;
-        margin-right: 50px;
+        margin-left: 40px;
+        margin-right: 40px;
     }
 
     .footer-container {
@@ -724,24 +731,25 @@ footer {
 
     nav ul.nav-links {
         margin-bottom: 0px;
-        margin-left: 38px;
+        width: 100%;
     }
 
     nav ul.nav-links li {
-        margin-left: 20px;
-        margin-right: 5em;
+        width: 50%;
+        margin: 0;
     }
 
     nav ul.nav-links li a {
         font-size: 15px;
+
     }
 
-    nav ul.nav-links li a:hover {
+    nav ul.nav-links li:hover {
         color: #0065FC;
         text-decoration: none;
         border-bottom: 2px solid;
         border-top: none;
-        padding: 10px 35px;
+
     }
 
     .title-search .main-titre {
@@ -923,6 +931,10 @@ footer {
         margin-right: 15px;
     }
 
+    .heb-links {
+        width: 100%;
+    }
+
     .hebergements {
         width: 100%;
         order: 2;
@@ -1067,46 +1079,43 @@ footer {
         text-decoration: none;
     }
 
+    .activity-title {
+        margin-left: 5em;
+        margin-top: 5em;
+    }
+
     .activity {
-        margin-left: 60px;
-        margin-bottom: 0px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 8%;
+        margin-bottom: 35px;
+        gap: 2px;
     }
 
     .activity-title {
-        margin-left: 40px;
+        margin-left: 2em;
         margin-top: 5em;
     }
 
     .activity-card {
         display: flex;
-        flex-direction: column;
-        width: 100%
+        width: 95%;
+        background-color: white;
+        border-radius: 25px 20px 20px 25px;
+        filter: drop-shadow(0px 3px 15px rgba(173, 173, 173, 0.1));
     }
 
     .activity-card img {
         display: flex;
         width: 100%;
-        height: 150px;
-        margin-left: 0px;
+        height: 250px;
         object-fit: cover;
         border-radius: 20px 20px 0 0;
-        box-shadow: 0px 8px 20px #b1b1b1;
-    }
-
-    .activity-card-content {
-        display: flex;
-        margin-left: 0px;
-        margin-right: 0px;
-        box-sizing: border-box;
-        background-color: white;
-        border-radius: 0px 0px 20px 20px;
-        box-shadow: 0px 10px 15px rgb(220 220 220);
-        margin-bottom: 15px;
     }
 
     .activity-card-content h3 {
         font-family: 'Raleway', sans-serif;
-        font-size: 17px;
+        font-size: 15px;
         margin-left: 15px;
         font-weight: 900;
     }
@@ -1114,8 +1123,8 @@ footer {
     footer {
         display: flex;
         flex-direction: column;
-        padding: 0px 0;
-        margin-right: 0px;
+        margin-right: 0%;
+        margin-left: 0%;
     }
 
     .footer-container h3 {
@@ -1125,8 +1134,6 @@ footer {
 
     .footer-container ul {
         list-style-type: none;
-        padding: 0;
-        margin-top: 10px;
     }
 
     .footer-container ul li {
