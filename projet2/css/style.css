@@ -850,7 +850,6 @@ footer {
     }
 
     .filter-label {
-        display: flex;
         font-weight: 900;
         position: relative;
         top: 40px;
