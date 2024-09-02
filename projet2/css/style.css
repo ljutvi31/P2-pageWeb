@@ -27,7 +27,7 @@ nav ul.nav-links {
     display: flex;
     list-style: none;
     justify-content: flex-end;
-    margin-right: 40px;
+    margin-right: 20px;
 }
 
 nav ul.nav-links li {
@@ -84,8 +84,6 @@ form {
 .search-bar input[type="text"] {
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
-    padding: 15px 0px;
-    padding-top: 13px;
     border-top: 1px #f2f2f2 solid;
     border-right: none;
     border-left: none;
@@ -107,11 +105,11 @@ form {
 .search-bar #search-input {
     font-weight: 900;
     font-size: 17px;
+    text-indent: 5%;
 }
 
 .search-bar #search-input::placeholder {
     color: rgb(5, 4, 4);
-    padding-left: 25px;
 }
 
 .filter-label {
@@ -798,13 +796,11 @@ footer {
     .search-bar #search-input {
         font-weight: 900;
         font-size: 15px;
-        margin-right: 0px;
     }
 
     .search-bar input[type="text"] {
         box-sizing: border-box;
         font-family: 'Raleway', sans-serif;
-        padding: 17px;
         border-top: 1px #f2f2f2 solid;
         border-right: none;
         border-left: none;
