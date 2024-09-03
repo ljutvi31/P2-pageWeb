@@ -158,7 +158,6 @@ form {
 }
 
 .fa-solid {
-    display: inline;
     font-size: 15px;
     margin-top: 33px;
 }
@@ -166,8 +165,8 @@ form {
 .spe-info {
     font-size: 11px;
     display: block;
-    width: 1%;
-    height: 14px;
+    width: 1.5%;
+    height: 16px;
     padding: 1px;
     text-align: center;
     border: 1px solid #d9d9d9;
@@ -303,7 +302,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 21px;
+    margin-right: 40px;
 }
 
 .populaires-cards .card {
