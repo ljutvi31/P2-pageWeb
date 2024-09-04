@@ -877,8 +877,7 @@ footer {
         font-size: 11px;
         display: block;
         width: 5%;
-        height: 14px;
-        padding: 1px;
+        height: 18px;
         text-align: center;
         border: 1px solid rgb(187, 187, 192);
         border-radius: 100%;
@@ -1019,23 +1018,23 @@ footer {
         margin-top: 10px;
         margin-bottom: 20px;
         padding-left: 10px;
-        padding-right: 10px;
     }
 
     .populaires-cards a {
-        margin-left: 10px;
+        margin-left: 1em;
     }
 
     .populaires-cards .card {
         display: flex;
         margin-top: 0px;
+        width: 95%;
     }
 
     .populaires-title {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-right: 30px;
+        margin-right: 1em;
         margin-left: 1em;
     }
 
@@ -1100,7 +1099,7 @@ footer {
 
     .activity-card {
         display: flex;
-        width: 90%;
+        width: 96%;
         background-color: white;
         border-radius: 25px 20px 20px 25px;
         filter: drop-shadow(0px 3px 15px rgba(173, 173, 173, 0.1));
