@@ -64,7 +64,6 @@ nav ul.nav-links li:hover {
     padding-top: 20px;
 }
 
-/* barre de recherche et icone*/
 .title-search .main-title {
     font-size: 22px;
     margin-top: 35px;
@@ -234,7 +233,6 @@ a {
 
 .card img {
     object-fit: cover;
-    width: 100%
 }
 
 .card-title {
@@ -366,6 +364,11 @@ a {
     margin-bottom: 5px;
 }
 
+.populaires-cards a:nth-child(2) img {
+    width: 42%;
+    min-width: 91px;
+}
+
 .showmore-btn {
     font-size: 22px;
     font-weight: 700;
@@ -446,6 +449,10 @@ footer {
 @media (max-width: 1024px) and (min-width: 768px) {
     nav .logo img {
         margin-top: 2em;
+    }
+
+    a {
+        width: 100%;
     }
 
     .title-search .main-title {
@@ -736,6 +743,11 @@ footer {
 
     .populaires-cards .card-subtitle {
         margin: 0;
+    }
+
+    .populaires-cards a:nth-child(2) img {
+        width: 47%;
+
     }
 
     .showmore-btn {
