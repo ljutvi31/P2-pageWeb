@@ -137,6 +137,12 @@ form {
     margin-bottom: 20px;
 }
 
+.filter-button-container {
+    flex-direction: row;
+    width: 100%;
+    display: flex;
+}
+
 .filter-button {
     border: 1px solid #d9d9d9;
     border-radius: 30px;
@@ -471,13 +477,12 @@ footer {
 
     .filter-container {
         gap: 5px;
-        margin-bottom: 3em;
+        margin-bottom: 1em;
+        flex-wrap: wrap;
     }
 
-    .filter-button {
-        position: relative;
-        top: 3em;
-        right: 5em;
+    .filter-button-container {
+        display: flex;
     }
 
     .hebergements-and-populaires {
@@ -581,12 +586,17 @@ footer {
         display: inline-block;
     }
 
-    .filter-container {
+    .filter-button {
+        margin-top: 15px;
+    }
+
+    .filter-button-container {
         flex-wrap: wrap;
     }
 
-    .filter-button {
-        margin-top: 15px;
+    .filter-container {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .filter-button.economic {
@@ -693,6 +703,10 @@ footer {
         margin-left: 1em;
     }
 
+    .hebergements-cards img {
+        height: 200px;
+    }
+
     .card-title {
         font-size: 16px;
     }
@@ -746,8 +760,8 @@ footer {
     }
 
     .populaires-cards a:nth-child(2) img {
-        width: 47%;
-
+        width: 33%;
+        min-width: 33%;
     }
 
     .showmore-btn {
